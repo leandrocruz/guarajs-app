@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Leandro Rodrigo Saad Cruz">
+		<title>Guara Showcase</title>
+
+		<script type="text/javascript">
+			var require = {
+				baseUrl	: '/js',
+				paths	: {'guara':'/bower/guara/js'}
+			};
+		</script>
+		<script src="bower/requirejs/require.js"></script>
+		<script src="bower/webcomponentsjs/webcomponents.min.js"></script>
+		<script src="bower/jquery/dist/jquery.min.js"></script>
+
+		<link rel="import" href="bower/polymer/polymer.html">
+		<link rel="import" href="bower/guara/guara.html">
+	</head>
+	<body>
+		<script type="text/javascript">
+			require(['app'], function(app){
+				app.init();
+			});
+		</script>
+	</body>
+</html>

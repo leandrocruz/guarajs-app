@@ -1,0 +1,26 @@
+{
+  "name": "guara-showcase",
+  "version": "1.0.0",
+  "authors": [
+    "Leandro Cruz <leandro.saad@gmail.com>"
+  ],
+  "description": "Guara Showcase",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "guara"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "guara": "#master"
+  }
+}
