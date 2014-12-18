@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Leandro Rodrigo Saad Cruz">
-		<title>Guara Showcase</title>
+		<title>Guara Sample Application</title>
 
 		<script type="text/javascript">
 			var require = {
@@ -17,11 +17,25 @@
 
 		<link rel="import" href="bower/polymer/polymer.html">
 		<link rel="import" href="bower/guara/guara.html">
+		<link rel="stylesheet" type="text/css" href="bower/guara/guara.css">
+
+		<!-- Extra -->
+		<link rel="import" href="bower/akyral-modal/akyral-modal.html">
+
 	</head>
-	<body>
+	<body unresolved>
+		<akyral-modal id="modal" type="flip">
+			<button id="close" type="button" class="btn btn-primary modal_btn">Toggle Modal</button>
+		</akyral-modal>
+		<button id="show" type="button" class="btn btn-primary modal_btn">Toggle Modal</button>
 		<script type="text/javascript">
 			require(['app'], function(app){
 				app.init();
+			});
+
+			var btn = $('.modal_btn').click(function(evt){
+				var modal = document.getElementById('modal');
+				modal.toggle();
 			});
 		</script>
 	</body>
